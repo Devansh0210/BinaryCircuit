@@ -3,7 +3,7 @@ This is Python Command Line App for Degital Design.
 This isn't optimised as of now.
 
 #### To Install it 
-* Clone into your working folder by using this command :
+* Clone into your working folder by using this command or download in zip format :
 
   ```
   git clone https://github.com/Devansh0210/BinaryCircuit.git
@@ -24,9 +24,22 @@ This isn't optimised as of now.
   
 * Example :
   ```
-  bincircuit equation " A'B+AB' " --kmap --table
+  bincircuit equation "A'B+AB'" --kmap --table
   ```
   Output :
   ```
-  
+  KMap : 
+
+  ___|  0 |  1 |
+    0|  0 |  1 |
+    1|  1 |  0 |
+
+  Truth Table :
+
+  | A | B | Output|
+  -----------------
+  | 0 | 0 |   0   |
+  | 0 | 1 |   1   |
+  | 1 | 0 |   1   |
+  | 1 | 1 |   0   |
   ```
