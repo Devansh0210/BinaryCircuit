@@ -28,5 +28,18 @@ This isn't optimised as of now.
   ```
   Output :
   ```
-  
+  KMap : 
+
+  ___|  0 |  1 |
+  0|  0 |  1 |
+  1|  1 |  0 |
+
+  Truth Table :
+
+  | A | B | Output|
+  -----------------
+  | 0 | 0 |   0   |
+  | 0 | 1 |   1   |
+  | 1 | 0 |   1   |
+  | 1 | 1 |   0   |
   ```
