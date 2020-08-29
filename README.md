@@ -24,7 +24,7 @@ This isn't optimised as of now.
   
 * Example :
   ```
-  bincircuit equation " A'B+AB' " --kmap --table
+  bincircuit equation "A'B+AB'" --kmap --table
   ```
   Output :
   ```
