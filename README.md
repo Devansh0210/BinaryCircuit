@@ -3,7 +3,7 @@ This is Python Command Line App for Degital Design.
 This isn't optimised as of now.
 
 #### To Install it 
-* Clone into your working folder by using this command :
+* Clone into your working folder by using this command or download in zip format :
 
   ```
   git clone https://github.com/Devansh0210/BinaryCircuit.git
