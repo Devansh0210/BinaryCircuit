@@ -65,11 +65,11 @@ class KMap(BoolEquation):
             return (self.resultMat)
       
       def printKMap(self):
-            table = 'KMap : \n\n___| '
+            table = 'KMap : \n\n___|'
             grayX = [conv_grayCode(s) for s in binaryGen(self.X)]
             grayY = [conv_grayCode(d) for d in binaryGen(self.Y)]
             for x in grayX:
-                  table = table +f"{x} | "
+                  table = table + ''.join([' ']*(3-len(x))) + f'{x} |' 
             line = ""
             for l in range(self.dimY):
                   line = line + ''.join([' ']*(3-len(grayY[0]))) + f'{grayY[l]}|  '
