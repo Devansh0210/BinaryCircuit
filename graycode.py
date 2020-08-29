@@ -35,7 +35,7 @@ def decTobin(n):
     ex. decTobin(9) = 1001, decTobin(5) = 0101
 
     """
-    print(bin(n).replace("0b",""))  
+    return (bin(n).replace("0b",""))  
 
 def binTodec(s):
     tot = 0
@@ -44,5 +44,5 @@ def binTodec(s):
         tot = tot + int(k)*(2**i)
         i = i + 1
         
-    print(tot)
+    return (tot)
     
