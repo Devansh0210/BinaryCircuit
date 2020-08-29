@@ -8,4 +8,5 @@ binCircuit.egg-info/PKG-INFO
 binCircuit.egg-info/SOURCES.txt
 binCircuit.egg-info/dependency_links.txt
 binCircuit.egg-info/entry_points.txt
+binCircuit.egg-info/requires.txt
 binCircuit.egg-info/top_level.txt
