@@ -39,20 +39,21 @@ def conv(bindec,decbin,bingray):
             click.echo("Binary to graycode of {} : ".format(bingray) + str(conv_grayCode(bingray)))
 
 @cli.command(help="<Number of Literals> <Minterms seperated by ','> [--kmap] [--table]")
-@click.argument('number',type=int)
-@click.argument('minTerms',type=str)
+@click.argument('no',type=int)
+@click.argument('mins',type=str)
 @click.option('--kmap',is_flag=True,help="For showing KMap")
 @click.option('--table',is_flag=True,help="For showing Table")
-def minterms(number,minTerms,kmap,table):
-      s = minTerms
+def minterms(no,mins,kmap,table):
+      # print(no)
+      s = mins
       s = s.split(',')
       s = [int(j) for j in s]
-      t1 = Minterms(number,s)
-
-      if kmap:
-            click.echo(t1.generateTable())
+      t1 = Minterms(no,s)
 
       if table:
+            click.echo(t1.generateTable())
+
+      if kmap:
             click.echo(t1.printKMap())
 
 

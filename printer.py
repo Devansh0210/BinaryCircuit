@@ -123,7 +123,7 @@ class Minterms:
             self.resultMat = np.zeros((1,2**self.no),dtype=int)
             binNo = binaryGen(self.no)
             grayNo = [binTodec(conv_grayCode(decTobin(k))) for k in range(2**self.no)]
-            print(grayNo)
+            # print(grayNo)
             for k in self.minterms:
                   self.resultMat[0,np.where(grayNo==k)[0][0]] = 1
             
