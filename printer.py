@@ -45,10 +45,9 @@ class KMap(BoolEquation):
             self.resultMat = np.zeros((1,2**no),dtype=int)
             binNo = binaryGen(no)
             i = 0       
-            self.li = []     
             for num in binNo:
                   temp = conv_grayCode(num)
-                  self.li.append(temp)
+                  # self.li.append(temp)
                   temp = list(temp)
                   temp = [int(j) for j in temp]
                   self.resultMat[0,i] = func(*temp)
@@ -177,8 +176,5 @@ class Minterms:
             table = table + '\n' + line
             return (table)
 
-
-      
-t1 = Minterms(4,[0,5,12,8])
 # t1.generateTable()
 
