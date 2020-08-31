@@ -1,4 +1,4 @@
-from printer import TruthTable,KMap
+from printer import TruthTable,KMap,Minterms
 from graycode import *
 import click
 # global equation
@@ -38,8 +38,24 @@ def conv(bindec,decbin,bingray):
       if bingray:
             click.echo("Binary to graycode of {} : ".format(bingray) + str(conv_grayCode(bingray)))
 
-      
+@cli.command()
+@click.argument('no',type=int)
+@click.argument('mins',type=str)
+@click.option('--kmap',is_flag=True)
+@click.option('--table',is_flag=True)
+def minterms(no,mins,kmap,table):
+      s = mins
+      s = s.split(',')
+      s = [int(j) for j in s]
+      t1 = Minterms(no,s)
 
+      if kmap:
+            click.echo(t1.generateTable())
+
+      if table:
+            click.echo(t1.printKMap())
+
+            
 if __name__ == "__main__":
     cli()
 
