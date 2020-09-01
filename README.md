@@ -43,3 +43,37 @@ This isn't optimised as of now.
   | 1 | 0 |   1   |
   | 1 | 1 |   0   |
   ```
+  
+#### Generating K-Map and Truth table from given Minterms :
+
+* Syntax :
+  ```
+  bincircuit minterms <No of Literals> "<Minterms seperated by ','>" --kmap --table
+  ```
+* Example :
+  ```
+  bincircuit minterms 3 "0,2,4,6,7" --kmap --table
+  ```
+  
+  Output :
+  ```
+  Truth Table :
+
+  | A | B | C | Output|
+  ---------------------
+  | 0 | 0 | 0 |   1   |
+  | 0 | 0 | 1 |   0   |
+  | 0 | 1 | 0 |   1   |
+  | 0 | 1 | 1 |   0   |
+  | 1 | 0 | 0 |   1   |
+  | 1 | 0 | 1 |   0   |
+  | 1 | 1 | 0 |   1   |
+  | 1 | 1 | 1 |   1   |
+
+  KMap :
+
+  ___| 00 | 01 | 11 | 10 |
+    0|  1 |  0 |  0 |  1 |
+    1|  1 |  0 |  1 |  1 |
+  ```
+  
